@@ -1,2 +1,2 @@
-* all the values of are being predicted as 1
+* all the values are being predicted as the same
 * I couldn't figure out where the error in code is
