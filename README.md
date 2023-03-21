@@ -23,8 +23,7 @@
 
 * serial: 
   * ```make test_nn```
-  * ```
-    ./test_nn <num_hidden_layers> <neurons_in_each_hidden_layer> <num_of_epocs> <batch_size>```
+  * ``` ./test_nn <num_hidden_layers> <neurons_in_each_hidden_layer> <num_of_epocs> <batch_size>```
 
 * omp:
   * ```make test_nn_omp```
