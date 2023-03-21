@@ -43,7 +43,7 @@ void initmatrand(double **m, int r, int c)
 {
     for (int i = 0; i < r; i++)
         for (int j = 0; j < c; j++)
-            m[i][j] = 0.31; // 2.0 * (double)rand() / (double)RAND_MAX - 1.0;
+            m[i][j] = 2.0 * (double)rand() / (double)RAND_MAX - 1.0;
 }
 
 void matmul(double **m1, int r1, int c1, double **m2, int r2, int c2, double **m3)

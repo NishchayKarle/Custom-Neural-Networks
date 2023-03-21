@@ -84,8 +84,7 @@ void neural_network_init(neural_network *network, double alpha,
         for (int l = 0; l < network->tl; l++)
         {
             network->b[l] = createmat(network->nnl[l], 1);
-            // initmatrand(network->b[l], network->nnl[l], 1);
-            initmatzeros(network->b[l], network->nnl[l], 1);
+            initmatrand(network->b[l], network->nnl[l], 1);
         }
     }
 
@@ -290,6 +289,7 @@ int main(int argc, char **argv)
                         nb,  // BATCH SIZE
                         784, // INPUT
                         10); // OUTPUT
+
     double start, end;
     start = omp_get_wtime();
     train_neural_network(&nn, train_image, 6000, train_label);

@@ -34,8 +34,8 @@ double dsigmoid(double val)
 
 void apply_sigmoid(double **m, int r, int c, double **m2)
 {
-// #pragma omp parallel for num_threads(128 / min(64, nt))
-#pragma omp parallel for num_threads(10)
+    // #pragma omp parallel for num_threads(128 / min(64, nt))
+    // #pragma omp parallel for num_threads(10)
     for (int i = 0; i < r; i++)
         for (int j = 0; j < c; j++)
             m2[i][j] = sigmoid(m[i][j]);
@@ -43,8 +43,8 @@ void apply_sigmoid(double **m, int r, int c, double **m2)
 
 void apply_dsigmoid(double **m, int r, int c, double **m2)
 {
-// #pragma omp parallel for num_threads(128 / min(64, nt))
-#pragma omp parallel for num_threads(10)
+    // #pragma omp parallel for num_threads(128 / min(64, nt))
+    // #pragma omp parallel for num_threads(10)
     for (int i = 0; i < r; i++)
         for (int j = 0; j < c; j++)
             m2[i][j] = dsigmoid(m[i][j]);

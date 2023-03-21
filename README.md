@@ -1,4 +1,4 @@
-### ACCURACY with best values for nl, nh
+### ACCURACY with best values for number of hidden layers, neurons in hidden layer
 
 * epocs = 200, batch size = 10, train images = 6000, test images = 10000, hidden layers = 1, neurons in hidden layer = 20
   * ACC: 91.1 %
