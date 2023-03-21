@@ -22,9 +22,10 @@
 ### COMPILING AND RUN
 
 * serial: 
-  * make test_nn
-  * ./test_nn nl nh ne nb
+  * ```make test_nn```
+  * ```
+    ./test_nn <num_hidden_layers> <neurons_in_each_hidden_layer> <num_of_epocs> <batch_size>```
 
 * omp:
-  * make test_nn_omp
-  * ./test_nn_omp nl nh ne nb
+  * ```make test_nn_omp```
+  * ```./test_nn_omp <num_hidden_layers> <neurons_in_each_hidden_layer> <num_of_epocs> <batch_size>```
